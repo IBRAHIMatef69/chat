@@ -45,6 +45,7 @@ class SearchWidget extends StatelessWidget {
                           controller.onSearchBtnClick();
                         }
                       },
+
                     ),
                     hintText: "Search..",
                     border: InputBorder.none),

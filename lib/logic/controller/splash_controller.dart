@@ -6,7 +6,7 @@ class SplashController extends GetxController {
   void onInit() async {
     // TODO: implement onInit
     Future.delayed(
-        Duration(seconds: 3), () {
+        Duration(seconds: 2), () {
       Get.offNamed(Routes.mainScreen);
     });
     super.onInit();

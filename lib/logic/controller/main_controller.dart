@@ -41,7 +41,7 @@ class MainController extends GetxController {
   onSearchBtnClick() async {
     // userStream = await FireStoreMethods().GetUserByUserName(textEditingController.text);
     userStream = await messages
-        .where("displaydame", isEqualTo: textEditingController.text)
+        .where("displaydame", isGreaterThanOrEqualTo: textEditingController.text)
         .snapshots();
     isSearch = true;
     print("/////////");
